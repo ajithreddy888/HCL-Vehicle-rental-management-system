@@ -18,7 +18,7 @@
 <header>
     <ul class="navlist">
         <li class="nav-item"><a class="nav-link " aria-current="page" href="#customerProfile">My Profile</a></li>
-        <li class="nav-item"><a class="nav-link " aria-current="page" href="#customer_Car">Bikes</a></li>
+        <li class="nav-item"><a class="nav-link " aria-current="page" href="#customer_Car">Vehicle</a></li>
         <li class="nav-item"><a class="nav-link " aria-current="page" href="#bookingRequest">Orders</a></li>
         <li class="nav-item"><a class="nav-link " aria-current="page" href="#bookingResponse">Booking Response</a></li>
         <li class="nav-item"><a class="nav-link " aria-current="page" href="#payment">Payment</a></li>
@@ -174,11 +174,11 @@
                 <table class="table table table-primary table table-bordered">
                     <thead id="tblCarHeader">
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">Vehicle ID</th>
                         <th scope="col">Brand</th>
                         <th scope="col">No Of Passengers</th>
                         <th scope="col">Transmission</th>
-                        <th scope="col">Bike Type</th>
+                        <th scope="col">Vehicle Type</th>
                         <th scope="col">Color</th>
                         <th scope="col">Fuel Type</th>
                     </tr>
@@ -215,7 +215,7 @@
 
                 <div class="col-md-2">
                     <select class="form-select" aria-label="Default select example" id="carType">
-                        <option selected>Bike Type</option>
+                        <option selected>Vehicle Type</option>
                         <option value="1">General </option>
                         <option value="2">Premium </option>
                         <option value="3">Luxury </option>
@@ -236,7 +236,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <input type="text" class="form-control" id="carid" placeholder="Car ID" >
+                    <input type="text" class="form-control" id="carid" placeholder="Vehicle ID" >
                 </div>
 
 
@@ -254,7 +254,7 @@
                     </div>
                     <div class="col-2" style="display: none" >
                         <div class="form-group">
-                            <label><strong>BikePrice</strong></label>
+                            <label><strong>VehiclePrice</strong></label>
                             <input
                                     id="carPrice"
                                     class="form-control"
@@ -270,11 +270,11 @@
                 <table class="table table table-primary table table-bordered">
                     <thead id="tblCustOrder">
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">Vehicle ID</th>
                         <th scope="col">Brand</th>
                         <th scope="col">No Of Passengers</th>
                         <th scope="col">Transmission</th>
-                        <th scope="col">Bike Type</th>
+                        <th scope="col">Vehicle Type</th>
                         <th scope="col">Color</th>
                         <th scope="col">Fuel Type</th>
                     </tr>
@@ -313,7 +313,7 @@
                         <th>Booking ID</th>
                         <th>Order Date</th>
                         <th>Customer ID</th>
-                        <th>Bike ID</th>
+                        <th>Vehicle ID</th>
                         <th>Pickup Date</th>
                         <th>Return Date</th>
                         <th>Driver ID</th>
@@ -327,8 +327,10 @@
 
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-success mt-3 " id="btnRent" style="font-size:15px" disabled>Paid for Bike</button>
-                    <button type="button" class="btn btn-danger mt-3 " id="btnDeleteOrder" style="font-size:15px">Delete Order</button>
+                <a href="paymentDashBoard.html">   
+                <button type="button" class="btn btn-success mt-3 " id="btnRent" style="font-size:15px">Pay for Vehicle</button>
+                </a>
+                <button type="button" class="btn btn-danger mt-3 " id="btnDeleteOrder" style="font-size:15px">Delete Order</button>
                 </div>
 
         </div>
@@ -345,7 +347,7 @@
                 <table class="table table table-primary table table-bordered">
                     <thead id="tblPayHeader">
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">Vehicle ID</th>
                         <th scope="col">Date</th>
                         <th scope="col">Type</th>
                         <th scope="col">Amount</th>
